@@ -1,0 +1,107 @@
+<!--
+Single-file responsive portfolio (HTML + Tailwind CDN)
+Instructions:
+- Replace placeholder texts, images and links with your own content.
+- To use Tailwind's advanced features, consider installing Tailwind locally. This CDN approach is fine for quick prototypes and deployment (GitHub Pages, Netlify).
+- Images: replace /assets/profile.jpg and project images with your files or external URLs.
+- Save as `index.html` and open in a browser.
+-->
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>포트폴리오 | 이름</title>
+  <meta name="description" content="디자이너/개발자 포트폴리오 - 프로젝트, 기술 스택, 연락처" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <!-- Tailwind CDN for quick prototyping -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small custom additions */
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased leading-relaxed">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-gradient-to-b from-gray-900/80 via-gray-900/50 to-transparent backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="font-bold text-xl">Portfolio<span class="text-teal-400">.</span></a>
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 rounded-md ring-1 ring-gray-700">☰</button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileNav" class="md:hidden px-6 pb-4 hidden">
+      <a href="#about" class="block py-2">About</a>
+      <a href="#projects" class="block py-2">Projects</a>
+      <a href="#skills" class="block py-2">Skills</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="min-h-[60vh] flex items-center">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-teal-400 font-medium">안녕하세요</p>
+        <h1 class="mt-3 text-4xl md:text-5xl font-extrabold"> 디자이너<span class="text-teal-400"> 이예슬&nbsp;</span>입니다.<br class="hidden sm:inline"/> </h1>
+        <p class="mt-4 text-gray-300 max-w-xl">睿瑟 : 깊이 생각할[예], 아름다운 옥[슬]&nbsp;</p>
+        <p class="mt-4 text-gray-300 max-w-xl">브랜드의 아름다움을 깊이 생각하는 디자이너 이예슬 입니다.</p>
+<div class="mt-6 flex gap-3">
+        </div>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <div class="w-56 h-56 md:w-72 md:h-72 rounded-xl overflow-hidden ring-1 ring-gray-700">
+          <img src="IMG_9668.jpg" alt="프로필" class="w-full h-full object-cover"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold">About me</h2>
+      <p class="mt-4 text-gray-300">1999.08.07&nbsp; &nbsp; |&nbsp; &nbsp; 010-3223-4145&nbsp; &nbsp; |&nbsp; &nbsp;별내중앙로36-19</p>
+      <div class="mt-8 grid sm:grid-cols-2 gap-6">
+        <div class="glass p-6 rounded-lg">
+          <h3 class="font-semibold">License&nbsp;</h3>
+          <ul class="mt-3 text-sm text-gray-300 space-y-2">
+            <li>컴퓨터활용능력 2급</li>
+            <li>중국어 HSK6급</li>
+            <li>ACA 포토샵 / ACA 일러스트</li>
+			  <li>운전면허 2종 보통</li>
+          </ul>
+        </div>
+        <div class="glass p-6 rounded-lg">
+          <h3 class="font-semibold">Experience</h3>
+          <p class="mt-3 text-sm text-gray-300">고비즈코리아 서포터즈</p>
+          <p class="mt-3 text-sm text-gray-300">주식회사 케이존 (영상편집 / 유튜브 촬영 기획)</p>
+          <p class="mt-3 text-sm text-gray-300">(주)3일애&nbsp; (부자재 핸들링 / 영상편집 / SNS 컨텐츠 제작 / 상세페이지 / POP제작 / 리플렛 홍보물 제작)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div >
+          <img src="이예슬-포트폴리오1.jpg" alt="프로필" class="w-full h-full object-cover"/>
+	<img src="이예슬-포트폴리오2.jpg" alt="프로필" class="w-full h-full object-cover"/>
+	<img src="포트폴리오4.gif" alt="프로필" class="w-full h-full object-cover"/>
+	<img src="이예슬-포트폴리오4.gif" alt="프로필" class="w-full h-full object-cover"/>
+	<img src="이예슬-포트폴리오5.jpg" alt="프로필" class="w-full h-full object-cover"/>
+		<img src="이예슬-포트폴리오5-1.jpg" alt="프로필" class="w-full h-full object-cover"/>
+			<img src="이예슬-포트폴리오6.gif" alt="프로필" class="w-full h-full object-cover"/>
+				<img src="이예슬-포트폴리오7.jpg" alt="프로필" class="w-full h-full object-cover"/>
+						<img src="대지-2-사본-7-100.jpg" alt="프로필" class="w-full h-full object-cover"/>
+
+					<img src="이예슬-포트폴리오8.jpg" alt="프로필" class="w-full h-full object-cover"/>
+						<img src="이예슬-포트폴리오10.gif" alt="프로필" class="w-full h-full object-cover"/>
+							<img src="이예슬-포트폴리오11.jpg" alt="프로필" class="w-full h-full object-cover"/>
+
+        </div>
+
+  </script>
+</body>
+</html>
